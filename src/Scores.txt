@@ -1,0 +1,24 @@
+Tue Sep 12 15:23:16 ACST 2023 : Players Name Testing : Players Choice x2 Tails : You Lose
+Tue Sep 12 15:24:57 ACST 2023 : Players Name Testing : Players Choice x2 Tails : Victory
+Tue Sep 12 15:24:58 ACST 2023 : Players Name Testing : Players Choice x2 Tails : You Lose
+Tue Sep 12 15:25:17 ACST 2023 : Players Name Testing : Players Choice x2 Tails : You Lose
+Tue Sep 12 15:26:40 ACST 2023 : Players Name Testing : Players Choice x2 Tails : You Lose
+Tue Sep 12 15:26:41 ACST 2023 : Players Name Testing : Players Choice x2 Tails : You Lose
+Tue Sep 12 15:26:42 ACST 2023 : Players Name Testing : Players Choice x2 Tails : You Lose
+Tue Sep 12 15:26:44 ACST 2023 : Players Name Testing : Players Choice x2 Tails : You Lose
+Tue Sep 12 15:26:47 ACST 2023 : Players Name Testing : Players Choice x2 Tails : You Lose
+Tue Sep 12 15:26:48 ACST 2023 : Players Name Testing : Players Choice x2 Tails : Victory
+Tue Sep 12 15:26:49 ACST 2023 : Players Name Testing : Players Choice x2 Tails : Victory
+Tue Sep 12 15:26:49 ACST 2023 : Players Name Testing : Players Choice x2 Tails : Victory
+Tue Sep 12 15:26:50 ACST 2023 : Players Name Testing : Players Choice x2 Tails : Victory
+Tue Sep 12 15:26:51 ACST 2023 : Players Name Testing : Players Choice x2 Tails : Victory
+Tue Sep 12 15:26:53 ACST 2023 : Players Name Testing : Players Choice x2 Tails : Victory
+Tue Sep 12 15:26:53 ACST 2023 : Players Name Testing : Players Choice x2 Tails : Victory
+Tue Sep 12 15:26:54 ACST 2023 : Players Name Testing : Players Choice x2 Tails : Victory
+Tue Sep 12 15:27:21 ACST 2023 : Players Name Testing : Players Choice x2 Tails : Victory
+Tue Sep 12 15:27:24 ACST 2023 : Players Name Testing : Players Choice x2 Tails : You Lose
+Tue Sep 12 15:27:25 ACST 2023 : Players Name Testing : Players Choice x2 Tails : Victory
+Tue Sep 12 15:29:54 ACST 2023 : Players Name Testing : Players Choice x2 Tails : You Lose
+Tue Sep 12 15:29:55 ACST 2023 : Players Name Testing : Players Choice x2 Tails : You Lose
+Tue Sep 12 15:29:55 ACST 2023 : Players Name Testing : Players Choice x2 Tails : You Lose
+Tue Sep 12 15:53:18 ACST 2023 : Players Name Testing : Players Choice x2 Tails : Victory

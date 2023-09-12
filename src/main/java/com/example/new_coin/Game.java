@@ -3,7 +3,7 @@ package com.example.new_coin;
 public class Game {
     private String resultOfGame = "";
     public String gameOfTwoUp(Boolean coin1, Boolean coin2, String radioSelection, String playerName){
-        if (radioSelection.equals("HEADS_HEADS")) {
+        if (radioSelection.equals("Heads Heads")) {
             if (coin1 && coin2) {
                 resultOfGame = "Victory";
                 WriteFile.writeFileScores("Players Name " + playerName + " : Players Choice x2 Heads : " + resultOfGame);
@@ -15,7 +15,7 @@ public class Game {
             else {
                 resultOfGame = "Flip Again";
             }
-        } else if (radioSelection.equals("TAILS_TAILS")) {
+        } else if (radioSelection.equals("Tails Tails")) {
             if (!coin1 && !coin2) {
                 resultOfGame = "Victory";
                 WriteFile.writeFileScores("Players Name " + playerName + " : Players Choice x2 Tails : " + resultOfGame);

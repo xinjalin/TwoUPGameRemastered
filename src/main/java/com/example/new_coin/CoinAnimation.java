@@ -30,7 +30,12 @@ public class CoinAnimation {
         return cylinder;
     }
 
-    public static Timeline createSpinningTimeline(Cylinder cylinder, PhongMaterial material, Image textureHeads, Image textureTails) {
+    public static Timeline createSpinningTimeline(
+            Cylinder cylinder,
+            PhongMaterial material,
+            Image textureHeads,
+            Image textureTails) {
+
         Timeline timeline = new Timeline(
                 new KeyFrame(Duration.ZERO, new KeyValue(cylinder.rotateProperty(), 0)),
                 new KeyFrame(Duration.seconds(3), new KeyValue(cylinder.rotateProperty(), 360))
@@ -48,10 +53,11 @@ public class CoinAnimation {
         return timeline;
     }
 
-    public static Button handleBtnAnimation(String btnText, int posX, int posY) {
+    public static Button buttonTemplate(String btnText, int posX, int posY) {
         Button button = new Button(btnText);
         button.setLayoutX(posX);
         button.setLayoutY(posY);
+        button.setMinSize(100, 40);
         return button;
     }
 
@@ -67,20 +73,28 @@ public class CoinAnimation {
         return g.playGame(c1.isHeads(), c2.isHeads(), selectedBet, playerName);
     }
 
-    public static void handleCoinAnimationStop(Timeline timelineOne, Timeline timelineTwo, Cylinder cylinderOne, Cylinder cylinderTwo, PhongMaterial materialOne, PhongMaterial materialTwo, Image coinTextureOne, Image coinTextureTwo) {
+    public static void handleCoinAnimationStop(
+            Timeline timelineOne,
+            Timeline timelineTwo,
+            Cylinder cylinderOne,
+            Cylinder cylinderTwo,
+            PhongMaterial materialOne,
+            PhongMaterial materialTwo,
+            Image coinTextureOne,
+            Image coinTextureTwo) {
+
         timelineOne.stop(); // stop transition
         timelineTwo.stop(); // stop transition
 
-        double currentAngle = cylinderOne.getRotate(); // storing value of current rotation angle
-        double angleToComplete = (360 - currentAngle); // calculating the remaining angle of rotation to complete the rotation
+        RotateTransition c1rotate = new RotateTransition(Duration.seconds(0.5), cylinderOne);
+        RotateTransition c2rotate = new RotateTransition(Duration.seconds(0.5), cylinderTwo);
+        c1rotate.setByAngle(720);
+        c2rotate.setByAngle(720);
+        c1rotate.setFromAngle(90);
+        c2rotate.setFromAngle(90);
+        c1rotate.play();
+        c2rotate.play();
 
-        RotateTransition rotateToCompleteOne = new RotateTransition(Duration.seconds(0.5), cylinderOne);
-        rotateToCompleteOne.setByAngle(angleToComplete + 360 + 90); // using the calculated result of angle to complete a rotation then add one 360 deg of rotation plus 90 deg of rotation to show one of the end faces of the cylinder
-        rotateToCompleteOne.play(); // play transition
-
-        RotateTransition rotateToCompleteTwo = new RotateTransition(Duration.seconds(0.5), cylinderTwo);
-        rotateToCompleteTwo.setByAngle(angleToComplete + 360 + 90); // using the calculated result of angle to complete a rotation then add one 360 deg of rotation plus 90 deg of rotation to show one of the end faces of the cylinder
-        rotateToCompleteTwo.play(); // play transition
         materialOne.setDiffuseMap(coinTextureOne);
         materialTwo.setDiffuseMap(coinTextureTwo);
     }

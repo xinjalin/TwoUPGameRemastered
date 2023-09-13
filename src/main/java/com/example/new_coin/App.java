@@ -1,5 +1,6 @@
 package com.example.new_coin;
 
+import javafx.animation.RotateTransition;
 import javafx.animation.Timeline;
 import javafx.application.Application;
 import javafx.scene.Group;
@@ -9,9 +10,12 @@ import javafx.scene.image.Image;
 import javafx.scene.paint.PhongMaterial;
 import javafx.scene.shape.Cylinder;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 public class App extends Application {
-    public String selectedBet = "";
+    public String selectedRadioBtn = "";
+    public Button playGame;
+    public Button reset;
     public void start(Stage stage) {
 
         // coin textures
@@ -52,21 +56,25 @@ public class App extends Application {
         r2.setToggleGroup(tg);
 
         r1.setOnAction(e -> {
-            selectedBet = r1.getText();
-            System.out.println(selectedBet); // debug
+            selectedRadioBtn = r1.getText();
+            playGame.setDisable(false);
         });
         r2.setOnAction(e -> {
-            selectedBet = r2.getText();
-            System.out.println(selectedBet); // debug
+            selectedRadioBtn = r2.getText();
+            playGame.setDisable(false);
         });
 
-        // buttons to play game
-        Button playGame = CoinAnimation.handleBtnAnimation(
-                "Play Game",
-                300,
-                400
+        // button to play a game of twoup
+        playGame = CoinAnimation.buttonTemplate(
+            "Play Game",
+            300,
+            400
         );
+        playGame.setDisable(true);
         playGame.setOnAction(e -> {
+            reset.setDisable(false);
+            r1.setDisable(true);
+            r2.setDisable(true);
             String currentBet = getCurrentBet();
             Coin c1 = new Coin();
             Coin c2 = new Coin();
@@ -74,40 +82,62 @@ public class App extends Application {
             c2.flip();
             Image c1Texture = CoinAnimation.coinTexture(c1);
             Image c2Texture = CoinAnimation.coinTexture(c2);
-//            System.out.println("coin 1: " + c1.isHeads()); // debug
-//            System.out.println("coin 2: " + c2.isHeads()); // debug
+
             String gameResult = CoinAnimation.handleGame(c1, c2, currentBet, "Testing");
-//            System.out.println(gameResult); // debug
+            if (gameResult.equals("HH Flip Again")||(gameResult.equals("TT Flip Again"))) {
+                playGame.setText("Flip Again");
+            } else {
+                playGame.setDisable(true);
+            }
+
             switch (gameResult) {
-                case "HH", "HH Lose", "HH Flip Again", "TT", "TT Lose", "TT Flip Again" -> {
+                case "HH", "HH Lose", "TT", "TT Lose", "HH Flip Again", "TT Flip Again" -> {
                     CoinAnimation.handleCoinAnimationStop(
-                        timelineOne,
-                        timelineTwo,
-                        c1Cylinder,
-                        c2Cylinder,
-                        c1material,
-                        c2material,
-                        c1Texture,
-                        c2Texture
+                            timelineOne,
+                            timelineTwo,
+                            c1Cylinder,
+                            c2Cylinder,
+                            c1material,
+                            c2material,
+                            c1Texture,
+                            c2Texture
                     );
                 }
             }
         });
 
+        // resets the application to default state
+        reset = CoinAnimation.buttonTemplate(
+                "reset",
+                300,
+                500
+        );
+        reset.setDisable(true);
+        reset.setOnAction(e -> {
+            timelineOne.play();
+            timelineTwo.play();
+            tg.selectToggle(null);
+            playGame.setText("Play Game");
+            playGame.setDisable(true);
+            reset.setDisable(true);
+            r1.setDisable(false);
+            r2.setDisable(false);
+        });
 
         // create a group called root and add everything
         Group root = new Group();
-        root.getChildren().addAll(c1Cylinder, c2Cylinder, playGame, r1, r2);
+        root.getChildren().addAll(c1Cylinder, c2Cylinder, playGame, reset, r1, r2);
 
         // add the Group "root" to the Scene "scene" then add Scene to the Stage and show the stage
         Scene scene = new Scene(root, 700, 600, true);
         stage.setTitle("Two Up Game - Remastered");
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
 
     private String getCurrentBet() {
-        return selectedBet;
+        return selectedRadioBtn;
     }
 
     public static void main(String[] args) {

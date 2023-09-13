@@ -12,8 +12,6 @@ import javafx.scene.transform.Rotate;
 import javafx.util.Duration;
 import javafx.scene.control.Button;
 
-import java.lang.reflect.Array;
-
 public class CoinAnimation {
     public void welcomeMSG() {
         System.out.println("Welcome to Two Up in JavaFX");
@@ -50,40 +48,10 @@ public class CoinAnimation {
         return timeline;
     }
 
-    public static Button handlePlayGame(String btnText, Timeline timelineOne, Timeline timelineTwo, Cylinder cylinderOne, Cylinder cylinderTwo, String selectedBet, int posX, int posY) {
+    public static Button handleBtnAnimation(String btnText, int posX, int posY) {
         Button button = new Button(btnText);
         button.setLayoutX(posX);
         button.setLayoutY(posY);
-
-        button.setOnAction(e -> {
-            timelineOne.stop(); // stop transition
-            timelineTwo.stop(); // stop transition
-
-            double currentAngle = cylinderOne.getRotate(); // storing value of current rotation angle
-            double angleToComplete = (360 - currentAngle); // calculating the remaining angle of rotation to complete the rotation
-
-            RotateTransition rotateToCompleteOne = new RotateTransition(Duration.seconds(0.5), cylinderOne);
-            rotateToCompleteOne.setByAngle(angleToComplete + 360 + 90); // using the calculated result of angle to complete a rotation then add one 360 deg of rotation plus 90 deg of rotation to show one of the end faces of the cylinder
-            rotateToCompleteOne.play(); // play transition
-
-            RotateTransition rotateToCompleteTwo = new RotateTransition(Duration.seconds(0.5), cylinderTwo);
-            rotateToCompleteTwo.setByAngle(angleToComplete + 360 + 90); // using the calculated result of angle to complete a rotation then add one 360 deg of rotation plus 90 deg of rotation to show one of the end faces of the cylinder
-            rotateToCompleteTwo.play(); // play transition
-
-            Coin coinOne = new Coin();
-            Coin coinTwo = new Coin();
-
-            coinOne.flip();
-            coinTwo.flip();
-
-            Game game = new Game();
-            String result = game.gameOfTwoUp(coinOne.isHeads(), coinTwo.isHeads(), selectedBet, "Testing");
-            System.out.println("Game Result:" + result);
-
-            // Load a new texture image
-            // material.setDiffuseMap(winning texture);
-        });
-
         return button;
     }
 
@@ -92,5 +60,39 @@ public class CoinAnimation {
         r1.setLayoutX(posX);
         r1.setLayoutY(posY);
         return r1;
+    }
+
+    public static String handleGame(Coin c1, Coin c2, String selectedBet, String playerName) {
+        Twoup g = new Twoup();
+        return g.playGame(c1.isHeads(), c2.isHeads(), selectedBet, playerName);
+    }
+
+    public static void handleCoinAnimationStop(Timeline timelineOne, Timeline timelineTwo, Cylinder cylinderOne, Cylinder cylinderTwo, PhongMaterial materialOne, PhongMaterial materialTwo, Image coinTextureOne, Image coinTextureTwo) {
+        timelineOne.stop(); // stop transition
+        timelineTwo.stop(); // stop transition
+
+        double currentAngle = cylinderOne.getRotate(); // storing value of current rotation angle
+        double angleToComplete = (360 - currentAngle); // calculating the remaining angle of rotation to complete the rotation
+
+        RotateTransition rotateToCompleteOne = new RotateTransition(Duration.seconds(0.5), cylinderOne);
+        rotateToCompleteOne.setByAngle(angleToComplete + 360 + 90); // using the calculated result of angle to complete a rotation then add one 360 deg of rotation plus 90 deg of rotation to show one of the end faces of the cylinder
+        rotateToCompleteOne.play(); // play transition
+
+        RotateTransition rotateToCompleteTwo = new RotateTransition(Duration.seconds(0.5), cylinderTwo);
+        rotateToCompleteTwo.setByAngle(angleToComplete + 360 + 90); // using the calculated result of angle to complete a rotation then add one 360 deg of rotation plus 90 deg of rotation to show one of the end faces of the cylinder
+        rotateToCompleteTwo.play(); // play transition
+        materialOne.setDiffuseMap(coinTextureOne);
+        materialTwo.setDiffuseMap(coinTextureTwo);
+    }
+
+    public static Image coinTexture(Coin c) {
+        Image coinHeadsTexture = new Image("coin_4.png");
+        Image coinTailsTexture = new Image("coin_0.png");
+
+        if (c.isHeads()) {
+            return coinHeadsTexture;
+        } else {
+            return coinTailsTexture;
+        }
     }
 }

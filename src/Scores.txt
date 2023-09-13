@@ -1,24 +1,98 @@
-Tue Sep 12 15:23:16 ACST 2023 : Players Name Testing : Players Choice x2 Tails : You Lose
-Tue Sep 12 15:24:57 ACST 2023 : Players Name Testing : Players Choice x2 Tails : Victory
-Tue Sep 12 15:24:58 ACST 2023 : Players Name Testing : Players Choice x2 Tails : You Lose
-Tue Sep 12 15:25:17 ACST 2023 : Players Name Testing : Players Choice x2 Tails : You Lose
-Tue Sep 12 15:26:40 ACST 2023 : Players Name Testing : Players Choice x2 Tails : You Lose
-Tue Sep 12 15:26:41 ACST 2023 : Players Name Testing : Players Choice x2 Tails : You Lose
-Tue Sep 12 15:26:42 ACST 2023 : Players Name Testing : Players Choice x2 Tails : You Lose
-Tue Sep 12 15:26:44 ACST 2023 : Players Name Testing : Players Choice x2 Tails : You Lose
-Tue Sep 12 15:26:47 ACST 2023 : Players Name Testing : Players Choice x2 Tails : You Lose
-Tue Sep 12 15:26:48 ACST 2023 : Players Name Testing : Players Choice x2 Tails : Victory
-Tue Sep 12 15:26:49 ACST 2023 : Players Name Testing : Players Choice x2 Tails : Victory
-Tue Sep 12 15:26:49 ACST 2023 : Players Name Testing : Players Choice x2 Tails : Victory
-Tue Sep 12 15:26:50 ACST 2023 : Players Name Testing : Players Choice x2 Tails : Victory
-Tue Sep 12 15:26:51 ACST 2023 : Players Name Testing : Players Choice x2 Tails : Victory
-Tue Sep 12 15:26:53 ACST 2023 : Players Name Testing : Players Choice x2 Tails : Victory
-Tue Sep 12 15:26:53 ACST 2023 : Players Name Testing : Players Choice x2 Tails : Victory
-Tue Sep 12 15:26:54 ACST 2023 : Players Name Testing : Players Choice x2 Tails : Victory
-Tue Sep 12 15:27:21 ACST 2023 : Players Name Testing : Players Choice x2 Tails : Victory
-Tue Sep 12 15:27:24 ACST 2023 : Players Name Testing : Players Choice x2 Tails : You Lose
-Tue Sep 12 15:27:25 ACST 2023 : Players Name Testing : Players Choice x2 Tails : Victory
-Tue Sep 12 15:29:54 ACST 2023 : Players Name Testing : Players Choice x2 Tails : You Lose
-Tue Sep 12 15:29:55 ACST 2023 : Players Name Testing : Players Choice x2 Tails : You Lose
-Tue Sep 12 15:29:55 ACST 2023 : Players Name Testing : Players Choice x2 Tails : You Lose
-Tue Sep 12 15:53:18 ACST 2023 : Players Name Testing : Players Choice x2 Tails : Victory
+Wed Sep 13 10:01:37 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:01:45 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT Lose
+Wed Sep 13 10:01:48 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT Lose
+Wed Sep 13 10:01:55 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:02:20 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH Lose
+Wed Sep 13 10:02:21 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:02:27 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:02:34 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT Lose
+Wed Sep 13 10:03:44 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:03:45 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT
+Wed Sep 13 10:03:46 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT
+Wed Sep 13 10:04:34 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH Lose
+Wed Sep 13 10:06:45 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:06:54 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:06:57 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:06:59 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:07:02 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH Lose
+Wed Sep 13 10:07:04 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH Lose
+Wed Sep 13 10:07:04 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH Lose
+Wed Sep 13 10:07:05 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH Lose
+Wed Sep 13 10:07:06 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH Lose
+Wed Sep 13 10:07:10 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT Lose
+Wed Sep 13 10:07:10 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT
+Wed Sep 13 10:07:13 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT Lose
+Wed Sep 13 10:07:14 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT
+Wed Sep 13 10:13:02 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:13:12 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:13:17 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:13:21 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT
+Wed Sep 13 10:13:32 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH Lose
+Wed Sep 13 10:13:35 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:13:47 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT Lose
+Wed Sep 13 10:13:48 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT Lose
+Wed Sep 13 10:13:52 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:13:56 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:13:58 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:14:00 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:14:03 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH Lose
+Wed Sep 13 10:15:38 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:15:41 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:15:43 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:15:47 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:15:48 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:15:51 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:15:53 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:15:53 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH Lose
+Wed Sep 13 10:15:59 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT
+Wed Sep 13 10:16:01 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT
+Wed Sep 13 10:16:03 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT Lose
+Wed Sep 13 10:16:10 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT Lose
+Wed Sep 13 10:16:14 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT Lose
+Wed Sep 13 10:16:14 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT Lose
+Wed Sep 13 10:16:16 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT
+Wed Sep 13 10:18:28 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:31:49 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH Lose
+Wed Sep 13 10:32:12 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT Lose
+Wed Sep 13 10:32:18 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT
+Wed Sep 13 10:32:25 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT
+Wed Sep 13 10:32:27 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT
+Wed Sep 13 10:32:29 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT Lose
+Wed Sep 13 10:32:36 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT Lose
+Wed Sep 13 10:32:46 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:32:52 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:32:56 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH Lose
+Wed Sep 13 10:33:02 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT Lose
+Wed Sep 13 10:33:11 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT Lose
+Wed Sep 13 10:33:21 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT Lose
+Wed Sep 13 10:35:59 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:36:04 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:36:08 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:36:19 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT
+Wed Sep 13 10:36:59 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT
+Wed Sep 13 10:37:12 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH Lose
+Wed Sep 13 10:37:29 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:40:05 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH Lose
+Wed Sep 13 10:40:08 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH Lose
+Wed Sep 13 10:40:11 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT Lose
+Wed Sep 13 10:40:15 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT
+Wed Sep 13 10:40:17 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT Lose
+Wed Sep 13 10:40:19 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT
+Wed Sep 13 10:40:23 ACST 2023: Players Name: Testing: Bet: Tails Tails: Result: TT Lose
+Wed Sep 13 10:49:44 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:49:54 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH Lose
+Wed Sep 13 10:49:59 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:50:08 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:50:09 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:50:10 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH Lose
+Wed Sep 13 10:52:49 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:55:50 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:55:59 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:58:23 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH Lose
+Wed Sep 13 10:58:30 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:58:34 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH Lose
+Wed Sep 13 10:58:48 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH Lose
+Wed Sep 13 10:58:49 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH Lose
+Wed Sep 13 10:58:57 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH Lose
+Wed Sep 13 10:58:58 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH
+Wed Sep 13 10:59:00 ACST 2023: Players Name: Testing: Bet: Heads Heads: Result: HH

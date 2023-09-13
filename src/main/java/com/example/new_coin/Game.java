@@ -5,11 +5,11 @@ public class Game {
     public String gameOfTwoUp(Boolean coin1, Boolean coin2, String radioSelection, String playerName){
         if (radioSelection.equals("Heads Heads")) {
             if (coin1 && coin2) {
-                resultOfGame = "Victory";
+                resultOfGame = "Victory HH";
                 WriteFile.writeFileScores("Players Name " + playerName + " : Players Choice x2 Heads : " + resultOfGame);
             }
             else if (!coin1 && !coin2) {
-                resultOfGame = "You Lose";
+                resultOfGame = "You Lose HH";
                 WriteFile.writeFileScores("Players Name " + playerName + " : Players Choice x2 Heads : " + resultOfGame);
             }
             else {
@@ -17,11 +17,11 @@ public class Game {
             }
         } else if (radioSelection.equals("Tails Tails")) {
             if (!coin1 && !coin2) {
-                resultOfGame = "Victory";
+                resultOfGame = "Victory TT";
                 WriteFile.writeFileScores("Players Name " + playerName + " : Players Choice x2 Tails : " + resultOfGame);
             }
             else if (coin1 && coin2) {
-                resultOfGame = "You Lose";
+                resultOfGame = "You Lose TT";
                 WriteFile.writeFileScores("Players Name " + playerName + " : Players Choice x2 Tails : " + resultOfGame);
             }
             else {

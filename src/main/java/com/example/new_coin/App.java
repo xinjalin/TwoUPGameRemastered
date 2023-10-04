@@ -11,6 +11,8 @@ import javafx.scene.paint.PhongMaterial;
 import javafx.scene.shape.Cylinder;
 import javafx.animation.Timeline;
 
+import java.util.ArrayList;
+
 public class App extends Application {
     public String selectedRadioBtn = "";
     public Button playGame;
@@ -142,7 +144,12 @@ public class App extends Application {
 
         Button leaderboard = GUITemplates.customBtn("read file", 100, 100);
         leaderboard.setOnAction(e -> {
-            ReadFile.gameOutcomeData();
+            ArrayList<PlayerRecord> historicalGameData = ReadFile.gameOutcomeData();
+
+            for (PlayerRecord pr : historicalGameData) {
+                System.out.println(pr.toString()); //debug
+            }
+
         });
 
         // menu bar for user settings / Preferences

@@ -20,9 +20,6 @@ public class ReadFile {
                 PlayerRecord pr = new PlayerRecord(splitData[0], splitData[1], splitData[2], splitData[3]);
                 data.add(pr);
             }
-            for (PlayerRecord pr : data) {
-                System.out.println(pr.toString()); //debug
-            }
 
         } catch (IOException e){
         System.err.println("Error while reading from file: " + e.getMessage());

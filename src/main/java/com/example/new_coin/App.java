@@ -25,6 +25,8 @@ public class App extends Application {
 
     public void start(Stage stage) {
 
+        SQL.getDatabaseUsers();
+
         // coin textures
         Image coinHeadsTexture = new Image("coin_4.png");
         Image coinTailsTexture = new Image("coin_0.png");

@@ -6,11 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="8fdd8e13-6e04-49de-b5d8-f907365d54ad" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scores.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scores.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/new_coin/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/new_coin/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/new_coin/GUITemplates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/new_coin/GUITemplates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/new_coin/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/new_coin/GameWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/new_coin/LoginWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/new_coin/LoginWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/new_coin/RegisterWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/new_coin/RegisterWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/new_coin/SQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/new_coin/SQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/new_coin/NewApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/new_coin/SQLConnectionTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +78,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main_animation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="com.example.new_coin.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.new_coin.App" />
+      <module name="new_coin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.new_coin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.example.new_coin.Main_animation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.new_coin.Main_animation" />
       <module name="new_coin" />
       <extension name="coverage">
@@ -89,20 +104,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NewApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.new_coin.NewApp" />
-      <module name="new_coin" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.new_coin.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SQLConnectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="com.example.new_coin.SQLConnectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.new_coin.SQLConnectionTest" />
       <module name="new_coin" />
       <extension name="coverage">
@@ -115,7 +117,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="advanceAnimation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="com.example.new_coin.advanceAnimation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.new_coin.advanceAnimation" />
       <module name="new_coin" />
       <extension name="coverage">
@@ -144,10 +146,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.NewApp" />
-        <item itemvalue="Application.SQLConnectionTest" />
-        <item itemvalue="Application.App" />
-        <item itemvalue="Application.advanceAnimation" />
-        <item itemvalue="Application.Main_animation" />
+        <item itemvalue="Application.com.example.new_coin.SQLConnectionTest" />
+        <item itemvalue="Application.com.example.new_coin.App" />
+        <item itemvalue="Application.com.example.new_coin.advanceAnimation" />
+        <item itemvalue="Application.com.example.new_coin.Main_animation" />
       </list>
     </recent_temporary>
   </component>

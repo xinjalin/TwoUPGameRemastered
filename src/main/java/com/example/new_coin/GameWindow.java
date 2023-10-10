@@ -18,7 +18,7 @@ public class GameWindow {
     public Button reset;
 
     public void display(Stage primaryStage) {
-        primaryStage.setTitle("Fish Game");
+        primaryStage.setTitle("Two Up Game - Remastered");
 
         // coin textures
         Image coinHeadsTexture = new Image("coin_4.png");
@@ -182,7 +182,6 @@ public class GameWindow {
         // add the Group "root" to the Scene "scene" then add Scene to the Stage and show the stage
         Scene scene = new Scene(root, 700, 600, true);
         scene.setFill(Color.SLATEGREY);
-        primaryStage.setTitle("Two Up Game - Remastered");
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         primaryStage.show();

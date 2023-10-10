@@ -44,8 +44,8 @@ public class LoginWindow {
 
                 if (authUser == null) {
                     System.out.println("no user found");
+
                 } else {
-                    System.out.println(authUser.toString()); // debug
                     Boolean isMatch = HashingService.checkPassword(authPassword, authUser.getPasswordHash());
 
                     if (isMatch) {
@@ -55,10 +55,12 @@ public class LoginWindow {
                         GameWindow gw = new GameWindow();
                         Stage n = new Stage();
                         gw.display(n);
+                    } else {
+                        System.out.println("Invalid Password");
                     }
                 }
             } catch (RuntimeException ex) {
-                System.out.println("Invalid Username or Password");
+                System.out.println("Auth Error");
                 ex.printStackTrace();
             }
 

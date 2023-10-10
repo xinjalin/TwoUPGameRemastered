@@ -19,6 +19,9 @@ public class LoginWindow {
         grid.setVgap(8);
         grid.setHgap(10);
 
+        Label infoLabel = new Label("");
+        GridPane.setConstraints(infoLabel, 1, 4);
+
         Label usernameLabel = new Label("Username");
         GridPane.setConstraints(usernameLabel, 0, 0);
 
@@ -43,7 +46,7 @@ public class LoginWindow {
                 User authUser = SQL.getUserByUsername(authUsername);
 
                 if (authUser == null) {
-                    System.out.println("no user found");
+                    infoLabel.setText("no user found");
 
                 } else {
                     Boolean isMatch = HashingService.checkPassword(authPassword, authUser.getPasswordHash());
@@ -56,11 +59,11 @@ public class LoginWindow {
                         Stage n = new Stage();
                         gw.display(n);
                     } else {
-                        System.out.println("Invalid Password");
+                        infoLabel.setText("Invalid Password");
                     }
                 }
             } catch (RuntimeException ex) {
-                System.out.println("Auth Error");
+                infoLabel.setText("Auth Error");
                 ex.printStackTrace();
             }
         });
@@ -82,7 +85,8 @@ public class LoginWindow {
                 passwordLabel,
                 passwordInput,
                 loginButton,
-                registerButton
+                registerButton,
+                infoLabel
         );
 
         Scene scene = new Scene(grid, 300, 200);

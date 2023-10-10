@@ -9,6 +9,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
+import java.util.Objects;
+
 public class RegisterWindow {
 
     public void display(Stage primaryStage) {
@@ -18,6 +20,9 @@ public class RegisterWindow {
         grid.setPadding(new Insets(10,10,10,10));
         grid.setVgap(8);
         grid.setHgap(10);
+
+        Label infoLabel = new Label("");
+        GridPane.setConstraints(infoLabel, 1, 4);
 
         Label usernameLabel = new Label("Username");
         GridPane.setConstraints(usernameLabel, 0, 0);
@@ -35,29 +40,34 @@ public class RegisterWindow {
         Button registerButton = new Button("Register New User");
         GridPane.setConstraints(registerButton, 1, 2);
         registerButton.setOnAction(e -> {
-            String registeringUsername = passwordInput.getText().trim();
+            String registeringUsername = usernameInput.getText().trim();
             String registeringPassword = passwordInput.getText().trim();
 
             if (isEmpty(registeringUsername) || isEmpty(registeringPassword)) {
-                // change this to label text
-                System.out.println("Username and password are required!");
-            }
+                infoLabel.setText("Username and password are required!");
 
-            String hashedPassword = HashingService.hashPassword(registeringPassword);
-            User registeringUser = new User(registeringUsername, hashedPassword);
+            } else {
+                // check for existing user
+                if (SQL.checkDuplicateUser(registeringUsername)) {
+                    infoLabel.setText("Username all ready in use");
+                } else {
+                    String hashedPassword = HashingService.hashPassword(registeringPassword);
+                    User registeringUser = new User(registeringUsername, hashedPassword);
 
-            try {
-                SQL.addUser(registeringUser);
-                // close current window if successful inset into the database
-                // go back to log in window
-                primaryStage.close();
-                LoginWindow lw = new LoginWindow();
-                Stage n = new Stage();
-                lw.display(n);
+                    try {
+                        SQL.addUser(registeringUser);
+                        // close current window if successful inset into the database
+                        // go back to log in window
+                        primaryStage.close();
+                        LoginWindow lw = new LoginWindow();
+                        Stage n = new Stage();
+                        lw.display(n);
 
-            } catch (RuntimeException ex) {
-                System.out.println("Failed to register the user. Please try again later.");
-                ex.printStackTrace();
+                    } catch (RuntimeException ex) {
+                        infoLabel.setText("Failed to register. Database error");
+                        ex.printStackTrace();
+                    }
+                }
             }
         });
 
@@ -79,13 +89,21 @@ public class RegisterWindow {
                 passwordLabel,
                 passwordInput,
                 registerButton,
-                loginButton
+                loginButton,
+                infoLabel
         );
         Scene scene = new Scene(grid, 300, 200);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
     private static Boolean isEmpty(String str) {
-        return str == null || str.isEmpty();
+        boolean result;
+
+        if (Objects.equals(str, "")) {
+            result = true;
+        } else {
+            result = false;
+        }
+        return result;
     }
 }

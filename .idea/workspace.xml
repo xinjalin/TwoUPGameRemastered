@@ -7,6 +7,8 @@
     <list default="true" id="8fdd8e13-6e04-49de-b5d8-f907365d54ad" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/new_coin/LoginWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/new_coin/LoginWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/new_coin/RegisterWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/new_coin/RegisterWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/new_coin/SQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/new_coin/SQL.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

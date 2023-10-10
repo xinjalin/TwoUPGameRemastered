@@ -59,4 +59,33 @@ public class SQL {
         }
     }
 
+    public static boolean checkDuplicateUser(String username) {
+        boolean isDuplicate = false;
+        // Query to count how many users have the same username
+        String sql = "SELECT COUNT(*) FROM twoupdb.users WHERE username = ?";
+
+        try (
+                Connection myConn = DriverManager.getConnection(SQLurl, SQLuser, SQLpassword);
+                PreparedStatement pstmt = myConn.prepareStatement(sql)
+        ) {
+            pstmt.setString(1, username);
+
+            try (ResultSet rs = pstmt.executeQuery()) {
+                if (rs.next()) {
+                    // Retrieve the count
+                    int count = rs.getInt(1);
+                    if (count > 0) {
+                        // If count is greater than 0, it means a user with the same username already exists
+                        isDuplicate = true;
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        return isDuplicate;
+    }
+
+
 }

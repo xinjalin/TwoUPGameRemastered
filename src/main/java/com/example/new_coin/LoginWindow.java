@@ -63,8 +63,6 @@ public class LoginWindow {
                 System.out.println("Auth Error");
                 ex.printStackTrace();
             }
-
-
         });
 
         // open register window
@@ -75,7 +73,6 @@ public class LoginWindow {
             RegisterWindow rw = new RegisterWindow();
             Stage n = new Stage();
             rw.display(n);
-
         });
 
 
@@ -87,6 +84,7 @@ public class LoginWindow {
                 loginButton,
                 registerButton
         );
+
         Scene scene = new Scene(grid, 300, 200);
         primaryStage.setScene(scene);
         primaryStage.show();

@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 
 public class LoginWindow {
 
-    public void  display(Stage primaryStage) {
+    public void display(Stage primaryStage) {
         primaryStage.setTitle("Login Window");
 
         GridPane grid = new GridPane();
@@ -31,16 +31,41 @@ public class LoginWindow {
         PasswordField passwordInput = new PasswordField();
         GridPane.setConstraints(passwordInput, 1, 1);
 
+        // log a user in and open game window
         Button loginButton = new Button("Login");
         GridPane.setConstraints(loginButton, 1, 2);
         loginButton.setOnAction(e -> {
-            String authUsername = passwordInput.getText();
+            String authUsername = usernameInput.getText();
             String authPassword = passwordInput.getText();
-            System.out.println("current username: " + authUsername); // debug
-            System.out.println("current password: " + authPassword); // debug
+
+            // handle auth
+            try {
+                User authUser = SQL.getUserByUsername(authUsername);
+
+                if (authUser == null) {
+                    System.out.println("no user found");
+                } else {
+                    System.out.println(authUser.toString()); // debug
+                    Boolean isMatch = HashingService.checkPassword(authPassword, authUser.getPasswordHash());
+
+                    if (isMatch) {
+                        // open game window
+                        System.out.println("successful auth of user");
+                        primaryStage.close();
+                        GameWindow gw = new GameWindow();
+                        Stage n = new Stage();
+                        gw.display(n);
+                    }
+                }
+            } catch (RuntimeException ex) {
+                System.out.println("Invalid Username or Password");
+                ex.printStackTrace();
+            }
+
 
         });
 
+        // open register window
         Button registerButton = new Button("Register");
         GridPane.setConstraints(registerButton, 1, 3);
         registerButton.setOnAction(e -> {

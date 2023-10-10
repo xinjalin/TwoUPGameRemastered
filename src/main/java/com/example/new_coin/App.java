@@ -18,10 +18,10 @@ public class App extends Application {
     public Button playGame;
     public Button reset;
 
-    public static void main(String[] args) {
-        // start application
-        launch(args);
-    }
+//    public static void main(String[] args) {
+//        // start application
+//        launch(args);
+//    }
 
     public void start(Stage stage) {
 

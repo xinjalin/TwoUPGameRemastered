@@ -31,6 +31,7 @@ public class RegisterWindow {
         PasswordField passwordInput = new PasswordField();
         GridPane.setConstraints(passwordInput, 1, 1);
 
+        // register a new user
         Button registerButton = new Button("Register New User");
         GridPane.setConstraints(registerButton, 1, 2);
         registerButton.setOnAction(e -> {
@@ -48,6 +49,7 @@ public class RegisterWindow {
             try {
                 SQL.addUser(registeringUser);
                 // close current window if successful inset into the database
+                // go back to log in window
                 primaryStage.close();
                 LoginWindow lw = new LoginWindow();
                 Stage n = new Stage();
@@ -59,13 +61,25 @@ public class RegisterWindow {
             }
         });
 
+        // go back to log in window
+        Button loginButton = new Button("Login");
+        GridPane.setConstraints(loginButton, 1, 3);
+        loginButton.setOnAction(e -> {
+            primaryStage.close();
+            LoginWindow lw = new LoginWindow();
+            Stage n = new Stage();
+            lw.display(n);
+
+        });
+
 
         grid.getChildren().addAll(
                 usernameLabel,
                 usernameInput,
                 passwordLabel,
                 passwordInput,
-                registerButton
+                registerButton,
+                loginButton
         );
         Scene scene = new Scene(grid, 300, 200);
         primaryStage.setScene(scene);

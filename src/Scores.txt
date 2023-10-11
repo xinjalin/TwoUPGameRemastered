@@ -1,3 +1,35 @@
 Thu Sep 14 15:00:18 ACST 2023|Christopher|Heads Heads|HH
 Thu Sep 14 15:00:37 ACST 2023|John|Tails Tails|TT Lose
 Tue Oct 10 12:34:50 ACDT 2023|qwe|Heads Heads|HH
+Tue Oct 10 22:49:35 ACDT 2023|chris|Heads Heads|HH
+Wed Oct 11 09:24:50 ACDT 2023|qwe|Heads Heads|HH Lose
+Wed Oct 11 09:30:22 ACDT 2023|q|Heads Heads|HH Lose
+Wed Oct 11 11:37:56 ACDT 2023|chris|Heads Heads|HH
+Wed Oct 11 13:42:06 ACDT 2023|john|Heads Heads|HH
+Wed Oct 11 13:47:36 ACDT 2023|qwe|Heads Heads|HH
+Wed Oct 11 13:47:45 ACDT 2023|asde|Tails Tails|TT Lose
+Wed Oct 11 14:09:09 ACDT 2023|a|Heads Heads|HH
+Wed Oct 11 14:09:18 ACDT 2023|b|Heads Heads|HH Lose
+Wed Oct 11 14:09:24 ACDT 2023|b|Heads Heads|HH
+Wed Oct 11 14:09:29 ACDT 2023|c|Heads Heads|HH Lose
+Wed Oct 11 14:09:33 ACDT 2023|c|Heads Heads|HH
+Wed Oct 11 14:09:47 ACDT 2023|d|Heads Heads|HH Lose
+Wed Oct 11 14:09:53 ACDT 2023|d|Heads Heads|HH Lose
+Wed Oct 11 14:09:59 ACDT 2023|d|Tails Tails|TT
+Wed Oct 11 14:10:03 ACDT 2023|e|Heads Heads|HH
+Wed Oct 11 14:10:10 ACDT 2023|f|Tails Tails|TT Lose
+Wed Oct 11 14:10:14 ACDT 2023|f|Tails Tails|TT Lose
+Wed Oct 11 14:10:19 ACDT 2023|f|Tails Tails|TT Lose
+Wed Oct 11 14:10:26 ACDT 2023|f|Tails Tails|TT
+Wed Oct 11 14:10:45 ACDT 2023|g|Heads Heads|HH
+Wed Oct 11 14:11:19 ACDT 2023|g|Heads Heads|HH Lose
+Wed Oct 11 14:11:30 ACDT 2023|g|Heads Heads|HH
+Wed Oct 11 14:17:35 ACDT 2023|f|Heads Heads|HH Lose
+Wed Oct 11 14:17:38 ACDT 2023|f|Heads Heads|HH
+Wed Oct 11 14:23:55 ACDT 2023|q|Heads Heads|HH
+Wed Oct 11 14:24:21 ACDT 2023|q|Heads Heads|HH
+Wed Oct 11 14:24:29 ACDT 2023|q|Tails Tails|TT Lose
+Wed Oct 11 14:24:32 ACDT 2023|q|Tails Tails|TT
+Wed Oct 11 14:25:51 ACDT 2023|q|Tails Tails|TT Lose
+Wed Oct 11 14:25:57 ACDT 2023|q|Tails Tails|TT Lose
+Wed Oct 11 14:26:00 ACDT 2023|q|Tails Tails|TT

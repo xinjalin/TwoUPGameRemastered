@@ -38,8 +38,8 @@ public class LoginWindow {
         Button loginButton = new Button("Login");
         GridPane.setConstraints(loginButton, 1, 2);
         loginButton.setOnAction(e -> {
-            String authUsername = usernameInput.getText();
-            String authPassword = passwordInput.getText();
+            String authUsername = usernameInput.getText().trim();
+            String authPassword = passwordInput.getText().trim();
 
             // handle auth
             try {
@@ -57,7 +57,7 @@ public class LoginWindow {
                         primaryStage.close();
                         GameWindow gw = new GameWindow();
                         Stage n = new Stage();
-                        gw.display(n);
+                        gw.display(n, authUser);
                     } else {
                         infoLabel.setText("Invalid Password");
                     }

@@ -13,5 +13,9 @@ public class App extends Application {
     public void start(Stage primaryStage) {
         LoginWindow loginWindow = new LoginWindow();
         loginWindow.display(primaryStage);
+
+        // testing leaderboard
+//        LeaderBoard lb = new LeaderBoard();
+//        lb.display(primaryStage);
     }
 }

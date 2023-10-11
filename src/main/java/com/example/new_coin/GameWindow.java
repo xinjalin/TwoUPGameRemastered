@@ -10,14 +10,12 @@ import javafx.scene.paint.PhongMaterial;
 import javafx.scene.shape.Cylinder;
 import javafx.stage.Stage;
 
-import java.util.ArrayList;
-
 public class GameWindow {
     public String selectedRadioBtn = "";
     public Button playGame;
     public Button reset;
 
-    public void display(Stage primaryStage) {
+    public void display(Stage primaryStage, User currentUser) {
         primaryStage.setTitle("Two Up Game - Remastered");
 
         // coin textures
@@ -52,8 +50,6 @@ public class GameWindow {
         // ===== GUI Elements ===== //
         Label gameState = GUITemplates.customLabel("gameState", 300,50);
 
-        Label playersNameLabel = GUITemplates.customLabel("Players Name", 0,400);
-        TextField playersNameTextField = GUITemplates.customTextField(100,400);
 
         // select a bet radio button group
         ToggleGroup tg = new ToggleGroup();
@@ -88,7 +84,7 @@ public class GameWindow {
             Image c2Texture = CoinAnimation.coinTexture(c2);
 
             // add playersName input gui
-            String gameResult = CoinAnimation.handleGame(c1, c2, currentBet, playersNameTextField.getText());
+            String gameResult = CoinAnimation.handleGame(c1, c2, currentBet, currentUser.getUsername());
 
             if (gameResult.equals("HH Flip Again")||(gameResult.equals("TT Flip Again"))) {
                 playGame.setText("Flip Again");
@@ -134,16 +130,13 @@ public class GameWindow {
             reset.setDisable(true);
             r1.setDisable(false);
             r2.setDisable(false);
-            playersNameTextField.setText("");
         });
 
-        Button leaderboard = GUITemplates.customBtn("read file", 100, 100);
+        Button leaderboard = GUITemplates.customBtn("Leaderboard", 100, 100);
         leaderboard.setOnAction(e -> {
-            ArrayList<PlayerRecord> historicalGameData = ReadFile.gameOutcomeData();
-
-            for (PlayerRecord pr : historicalGameData) {
-                System.out.println(pr.toString()); //debug
-            }
+            Leaderboard lb = new Leaderboard();
+            Stage n = new Stage();
+            lb.display(n);
 
         });
 
@@ -168,8 +161,6 @@ public class GameWindow {
         root.getChildren().addAll(
                 menuBar,
                 leaderboard,
-                playersNameLabel,
-                playersNameTextField,
                 gameState,
                 c1Cylinder,
                 c2Cylinder,

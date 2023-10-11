@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fdd8e13-6e04-49de-b5d8-f907365d54ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/new_coin/Leaderboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/new_coin/PlayerVictory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/new_coin/VictoryCounter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Scores.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scores.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/new_coin/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/new_coin/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/new_coin/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/new_coin/GameWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/new_coin/LoginWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/new_coin/LoginWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,10 +28,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "000000ff",
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;000000ff&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2MlMNZ3XYQFxblpHLoagglT2mfS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />

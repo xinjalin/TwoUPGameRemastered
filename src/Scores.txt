@@ -33,3 +33,10 @@ Wed Oct 11 14:24:32 ACDT 2023|q|Tails Tails|TT
 Wed Oct 11 14:25:51 ACDT 2023|q|Tails Tails|TT Lose
 Wed Oct 11 14:25:57 ACDT 2023|q|Tails Tails|TT Lose
 Wed Oct 11 14:26:00 ACDT 2023|q|Tails Tails|TT
+Wed Oct 11 15:34:49 ACDT 2023|qqq|Heads Heads|HH Lose
+Wed Oct 11 15:37:39 ACDT 2023|q|Heads Heads|HH Lose
+Wed Oct 11 15:38:42 ACDT 2023|q|Heads Heads|HH
+Wed Oct 11 15:38:47 ACDT 2023|q|Tails Tails|TT
+Wed Oct 11 15:38:51 ACDT 2023|q|Tails Tails|TT
+Wed Oct 11 15:39:06 ACDT 2023|q|Tails Tails|TT Lose
+Wed Oct 11 15:39:17 ACDT 2023|q|Tails Tails|TT Lose

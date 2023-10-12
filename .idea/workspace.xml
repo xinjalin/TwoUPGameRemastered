@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fdd8e13-6e04-49de-b5d8-f907365d54ad" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/new_coin/App_structure.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/new_coin/TestGameLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Scores.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scores.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/new_coin/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/new_coin/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/new_coin/TestGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,22 +43,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/vs-code-projects/SDK/openjfx-20.0.2_windows-x64_bin-sdk.zip&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/vs-code-projects/github/TwoUPGameRemastered/src/main/java/com/example/new_coin",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\intelij_projects\new_coin\src\main\resources" />
@@ -75,8 +78,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.example.new_coin.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.new_coin.App" />
+    <configuration name="TestGameLogic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="new_coin" />
       <extension name="coverage">
         <pattern>
@@ -84,12 +86,14 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.example.new_coin" />
+      <option name="MAIN_CLASS_NAME" value="com.example.new_coin.TestGameLogic" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.example.new_coin.Main_animation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.new_coin.Main_animation" />
+    <configuration name="TestGameLogic.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="new_coin" />
       <extension name="coverage">
         <pattern>
@@ -97,12 +101,15 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.example.new_coin" />
+      <option name="MAIN_CLASS_NAME" value="com.example.new_coin.TestGameLogic" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.example.new_coin.SQLConnectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.new_coin.SQLConnectionTest" />
+    <configuration name="TestGameLogic.testCoinFaceValueIsCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="new_coin" />
       <extension name="coverage">
         <pattern>
@@ -110,12 +117,15 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.example.new_coin" />
+      <option name="MAIN_CLASS_NAME" value="com.example.new_coin.TestGameLogic" />
+      <option name="METHOD_NAME" value="testCoinFaceValueIsCorrect" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.example.new_coin.advanceAnimation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.new_coin.advanceAnimation" />
+    <configuration name="TestGameLogic.testCoinsNotNullWhenCalled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="new_coin" />
       <extension name="coverage">
         <pattern>
@@ -123,6 +133,10 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.example.new_coin" />
+      <option name="MAIN_CLASS_NAME" value="com.example.new_coin.TestGameLogic" />
+      <option name="METHOD_NAME" value="testCoinsNotNullWhenCalled" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -143,10 +157,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
-        <item itemvalue="Application.com.example.new_coin.SQLConnectionTest" />
-        <item itemvalue="Application.com.example.new_coin.App" />
-        <item itemvalue="Application.com.example.new_coin.advanceAnimation" />
-        <item itemvalue="Application.com.example.new_coin.Main_animation" />
+        <item itemvalue="JUnit.TestGameLogic" />
+        <item itemvalue="JUnit.TestGameLogic.testCoinFaceValueIsCorrect" />
+        <item itemvalue="JUnit.TestGameLogic.testCoinsNotNullWhenCalled" />
+        <item itemvalue="JUnit.TestGameLogic.test" />
       </list>
     </recent_temporary>
   </component>

@@ -8,6 +8,7 @@ import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.PhongMaterial;
 import javafx.scene.shape.Cylinder;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 public class GameWindow {
@@ -48,7 +49,7 @@ public class GameWindow {
         c2Timeline.play();
 
         // ===== GUI Elements ===== //
-        Label gameState = GUITemplates.customLabel("gameState", 300,50);
+        Label gameState = GUITemplates.customLabel("Result of Game", 300,50);
 
 
         // select a bet radio button group
@@ -68,7 +69,7 @@ public class GameWindow {
             playGame.setDisable(false);
         });
 
-        // button to play a game of twoup
+        // button to play a game of two-up
         playGame = GUITemplates.customBtn("Play Game",300,400);
         playGame.setDisable(true);
         playGame.setOnAction(e -> {
@@ -132,14 +133,6 @@ public class GameWindow {
             r2.setDisable(false);
         });
 
-        Button leaderboard = GUITemplates.customBtn("Leaderboard", 100, 100);
-        leaderboard.setOnAction(e -> {
-            Leaderboard lb = new Leaderboard();
-            Stage n = new Stage();
-            lb.display(n);
-
-        });
-
         // menu bar for user settings / Preferences
         MenuBar menuBar = new MenuBar();
         menuBar.setLayoutX(0);
@@ -148,11 +141,30 @@ public class GameWindow {
 
         Menu prefMenu = new Menu("Preferences");
         Menu fontSizeMenuItem = new Menu("Font Size");
-        MenuItem fontSizeSmall = new MenuItem("Small");
-        MenuItem fontSizeMedium = new MenuItem("Medium");
-        MenuItem fontSizeLarge = new MenuItem("Large");
 
-        prefMenu.getItems().addAll(fontSizeMenuItem);
+        MenuItem fontSizeSmall = new MenuItem("Small");
+        fontSizeSmall.setOnAction(e -> {
+            setFontBySize(10, gameState, r1, r2, playGame, reset);
+        });
+
+        MenuItem fontSizeMedium = new MenuItem("Medium");
+        fontSizeMedium.setOnAction(e -> {
+            setFontBySize(12, gameState, r1, r2, playGame, reset);
+        });
+
+        MenuItem fontSizeLarge = new MenuItem("Large");
+        fontSizeLarge.setOnAction(e -> {
+            setFontBySize(15, gameState, r1, r2, playGame, reset);
+        });
+
+        MenuItem leaderboardMenu = new MenuItem("LeaderBoard");
+        leaderboardMenu.setOnAction(e -> {
+            Leaderboard lb = new Leaderboard();
+            Stage n = new Stage();
+            lb.display(n);
+        });
+
+        prefMenu.getItems().addAll(fontSizeMenuItem, leaderboardMenu);
         fontSizeMenuItem.getItems().addAll(fontSizeSmall, fontSizeMedium, fontSizeLarge);
         menuBar.getMenus().addAll(prefMenu);
 
@@ -160,7 +172,6 @@ public class GameWindow {
         Group root = new Group();
         root.getChildren().addAll(
                 menuBar,
-                leaderboard,
                 gameState,
                 c1Cylinder,
                 c2Cylinder,
@@ -180,6 +191,16 @@ public class GameWindow {
     }
     private String getCurrentBet() {
         return selectedRadioBtn;
+    }
+
+    private void setFontBySize(Integer size, Label gs, RadioButton rb1, RadioButton rb2, Button pg, Button rb) {
+        Font font = new Font(size);
+        gs.setFont(font);
+        rb1.setFont(font);
+        rb2.setFont(font);
+        pg.setFont(font);
+        rb.setFont(font);
+
     }
 }
 
